@@ -14,6 +14,14 @@
   --color-white: #ffffff;
 }
 
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -29,6 +37,7 @@ h5,
 h6 {
   margin-top: 0;
 }
+
 ul {
   list-style-type: none;
   padding-inline-start: 0;
@@ -43,10 +52,13 @@ ul {
 }
 
 /* ******************* Header ************************* */
+.header-bottom {
+  border-bottom: 1px solid var(--color-cornflower);
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .header-nav {
@@ -61,7 +73,7 @@ ul {
 }
 
 .li-style-header {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   text-decoration: none;
   list-style-type: none;
 }
@@ -83,7 +95,7 @@ ul {
   color: var(--color-iris);
   line-height: 1.333;
   text-decoration: none;
-  padding-right: 76px;
+  margin-right: 76px;
 }
 
 .end {
@@ -106,6 +118,7 @@ ul {
 
 .menu-nav {
   padding: 24px 0;
+  display: block;
   color: var(--color-navy);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -130,6 +143,7 @@ ul {
 
 .contakt {
   padding: 24px 0;
+  display: block;
   font-style: normal;
   color: var(--color-slate);
   font-weight: 400;
@@ -164,7 +178,8 @@ ul {
   letter-spacing: 0.02em;
   font-size: 56px;
   line-height: 1.0714;
-  padding: 188px 317px 48px 317px;
+  margin-bottom: 48px;
+  max-width: 524px;
   text-align: center;
 }
 
@@ -207,7 +222,7 @@ ul {
 }
 
 .li-style {
-  flex-basis: calc((100% -72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   text-decoration: none;
   list-style-type: none;
 }
@@ -222,7 +237,7 @@ ul {
   margin: 0;
 }
 
-.head-three {
+.header-three {
   color: var(--color-navy);
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -288,7 +303,6 @@ ul {
 
 .button-style {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-bottom: 72px;
   gap: 24px;
@@ -297,7 +311,6 @@ ul {
 
 .section-portfolio {
   display: flex;
-  /* gap: 24px; */
   margin-right: -24px;
   margin-bottom: -48px;
   flex-wrap: wrap;
@@ -318,23 +331,8 @@ ul {
   flex-basis: calc((100% - 72px) / 3);
 }
 
-.header-three-portfolio {
-  color: var(--color-navy);
-  font-size: 20px;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  font-weight: 500;
-  margin: 0;
-  padding: 32px 0px 0px 16px;
-}
-
-.body-three-portfolio {
-  color: var(--color-slate);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  margin: 0;
-  padding: 8px 0 32px 16px;
+.portfolio {
+  padding: 32px 95px 32px 16px;
 }
 
 .list-button {
