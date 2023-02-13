@@ -21,32 +21,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <div class="header-container">
+    <header>
+      <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo start"
             >Web<span class="logo end">Studio</span></a
           >
           <ul class="header-list">
-            <li class="li-style">
+            <li class="li-style-header">
               <a href="./index.html" class="menu-nav current">Studio</a>
             </li>
-            <li class="li-style">
+            <li class="li-style-header">
               <a href="portfolio.html" class="menu-nav">Portfolio</a>
             </li>
-            <li class="li-style">
+            <li class="li-style-header">
               <a href="#" class="menu-nav">Contacts</a>
             </li>
           </ul>
         </nav>
         <address>
           <ul class="adress">
-            <li class="li-style">
+            <li class="li-style-header">
               <a href="mailto:info@devstudio.com" class="contakt"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="li-style">
+            <li class="li-style-header">
               <a href="tel:+110001111111" class="contakt"
                 >+11 (000) 111-11-11</a
               >
@@ -57,42 +57,40 @@
     </header>
     <main>
       <section class="section-back">
-        <div class="container">
-          <div class="section-two-container">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="order-button" type="button">Order Service</button>
-          </div>
+        <div class="container two-hero">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button class="order-button" type="button">Order Service</button>
         </div>
       </section>
-      <section class="container">
+      <section>
         <h2 class="visually-hidden">
           Strategy Punctuality Diligence Technologies
         </h2>
-        <div>
+        <div class="container top">
           <ul class="section-three-container">
             <li class="li-style">
-              <h3 class="header-three">Strategy</h3>
+              <h3 class="head-three">Strategy</h3>
               <p class="body-three">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li class="li-style">
-              <h3 class="header-three">Punctuality</h3>
+              <h3 class="head-three">Punctuality</h3>
               <p class="body-three">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="li-style">
-              <h3 class="header-three">Diligence</h3>
+              <h3 class="head-three">Diligence</h3>
               <p class="body-three">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="li-style">
-              <h3 class="header-three">Technologies</h3>
+              <h3 class="head-three">Technologies</h3>
               <p class="body-three">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -101,8 +99,8 @@
           </ul>
         </div>
       </section>
-      <section class="container">
-        <div class="conteiner-bottom">
+      <section>
+        <div class="container top bottom">
           <h2 class="header-two">What are we doing</h2>
           <ul class="section-four">
             <li class="li-style">
@@ -133,54 +131,58 @@
         </div>
       </section>
       <section class="our-team">
-        <div class="container conteiner-bottom">
+        <div class="container">
           <h2 class="header-two">Our Team</h2>
           <ul class="section-four">
             <li class="our-team-staff">
               <img
+                style="display: block; width: 100%"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
               />
               <div class="staff-introduce">
-                <h3 class="header-three">Mark Guerrero</h3>
+                <h3 class="head-three">Mark Guerrero</h3>
                 <p class="body-three">Product Designer</p>
               </div>
             </li>
             <li class="our-team-staff">
               <img
+                style="display: block; width: 100%"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
               />
               <div class="staff-introduce">
-                <h3 class="header-three">Tom Ford</h3>
+                <h3 class="head-three">Tom Ford</h3>
                 <p class="body-three">Frontend Developer</p>
               </div>
             </li>
             <li class="our-team-staff">
               <img
+                style="display: block; width: 100%"
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
               />
               <div class="staff-introduce">
-                <h3 class="header-three">Camila Garcia</h3>
+                <h3 class="head-three">Camila Garcia</h3>
                 <p class="body-three">Marketing</p>
               </div>
             </li>
             <li class="our-team-staff">
               <img
+                style="display: block; width: 100%"
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
               />
               <div class="staff-introduce">
-                <h3 class="header-three">Daniel Wilson</h3>
+                <h3 class="head-three">Daniel Wilson</h3>
                 <p class="body-three">UI Designer</p>
               </div>
             </li>
@@ -188,18 +190,16 @@
         </div>
       </section>
     </main>
-    <footer class="section-back">
-      <section class="container">
-        <div class="footer-block">
-          <a href="./index.html" class="logo footer-start"
-            >Web<span class="logo footer-end">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-      </section>
+    <footer class="section-back-footer">
+      <div class="container">
+        <a href="./index.html" class="logo footer-start"
+          >Web<span class="logo footer-end">Studio</span></a
+        >
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

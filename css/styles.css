@@ -40,7 +40,6 @@ ul {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  height: fit-content;
 }
 
 /* ******************* Header ************************* */
@@ -59,8 +58,14 @@ ul {
 .header-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
+
+.li-style-header {
+  padding: 24px 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .adress {
   display: flex;
   gap: 40px;
@@ -100,6 +105,7 @@ ul {
 }
 
 .menu-nav {
+  padding: 24px 0;
   color: var(--color-navy);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -107,7 +113,7 @@ ul {
   text-decoration: none;
 }
 
-.menu-nav.current {
+.current {
   color: var(--color-ocean);
 }
 
@@ -123,6 +129,7 @@ ul {
 }
 
 .contakt {
+  padding: 24px 0;
   font-style: normal;
   color: var(--color-slate);
   font-weight: 400;
@@ -140,10 +147,11 @@ ul {
 
 /* ************************** Hero ********************** */
 .section-back {
+  padding: 188px 0;
   background-color: var(--color-navy-back);
 }
 
-.section-two-container {
+.two-hero {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -172,7 +180,6 @@ ul {
   cursor: pointer;
   list-style-type: none;
   padding: 16px 32px;
-  margin-bottom: 188px;
 }
 
 .order-button:hover,
@@ -185,7 +192,11 @@ ul {
   text-decoration: none;
 }
 
-.conteiner-bottom {
+.top {
+  padding-top: 120px;
+}
+
+.bottom {
   padding-bottom: 120px;
 }
 
@@ -193,10 +204,10 @@ ul {
   display: flex;
   gap: 24px;
   justify-content: space-between;
-  padding-top: 120px;
 }
 
 .li-style {
+  flex-basis: calc((100% -72px) / 4);
   text-decoration: none;
   list-style-type: none;
 }
@@ -209,19 +220,9 @@ ul {
   font-weight: 700;
   text-align: center;
   margin: 0;
-  padding-top: 120px;
 }
 
-.staff-introduce {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 0;
-  gap: 8px;
-}
-
-.header-three {
+.head-three {
   color: var(--color-navy);
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -235,21 +236,29 @@ ul {
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  margin: 0;
-  padding-top: 8px;
+  margin: 8px 0 0 0;
 }
 
 /* ******************** Section three ************************** */
 .our-team {
+  padding: 120px 0;
   background-color: var(--color-cloud-back);
+}
+
+.staff-introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  gap: 8px;
 }
 
 .section-four {
   display: flex;
   gap: 24px;
   justify-content: space-between;
-  padding-top: 72px;
-  margin: 0;
+  margin: 72px 0 0 0;
   flex-wrap: wrap;
 }
 
@@ -258,15 +267,12 @@ ul {
   text-decoration: none;
   list-style-type: none;
   flex-basis: calc((100% - 72px) / 4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* ***************** Footer ********************** */
-.footer-block {
-  padding: 100px 864px 100px 0;
-  margin: 0;
+.section-back-footer {
+  padding: 100px 0;
+  background-color: var(--color-navy-back);
 }
 
 .footer-text {
@@ -274,7 +280,8 @@ ul {
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  padding-top: 16px;
+  margin-top: 16px;
+  max-width: 264px;
 }
 
 /* ***************** Portfolio ********************* */
@@ -283,25 +290,32 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   gap: 24px;
   justify-content: center;
 }
 
 .section-portfolio {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
+  margin-right: -24px;
+  margin-bottom: -48px;
   flex-wrap: wrap;
-  padding-bottom: 120px;
+}
+
+.li-portfolio-button {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .li-style-portfolio {
-  /* border: 1px solid var(--color-cornflower); */
+  border: 1px solid var(--color-cornflower);
   text-decoration: none;
   list-style-type: none;
+  margin-right: 24px;
+  margin-bottom: 48px;
   background-color: var(--color-back);
-  flex-basis: calc((100% - 78px) / 3);
+  flex-basis: calc((100% - 72px) / 3);
 }
 
 .header-three-portfolio {
